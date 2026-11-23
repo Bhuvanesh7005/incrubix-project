@@ -1,0 +1,6 @@
+data/vis.db
+demo_data/
+__pycache__/
+.env
+*.pyc
+.pytest_cache/

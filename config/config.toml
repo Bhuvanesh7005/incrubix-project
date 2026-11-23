@@ -1,0 +1,62 @@
+[brand]
+names   = ["IncuBrix", "Incubrix"]
+domains = ["incubrix.com"]
+
+# US + 2 other markets (brief requirement). Location is recorded for every check.
+[[markets]]
+code = "US"
+gl = "us"
+hl = "en"
+location = "United States"
+[[markets]]
+code = "GB"
+gl = "gb"
+hl = "en"
+location = "United Kingdom"
+[[markets]]
+code = "IN"
+gl = "in"
+hl = "en"
+location = "India"
+
+# Competitor list: EDIT after you have used the market; these are starting guesses to detect, not claims.
+[[competitors]]
+name = "Opus Clip"
+domains = ["opus.pro"]
+[[competitors]]
+name = "Descript"
+domains = ["descript.com"]
+[[competitors]]
+name = "CapCut"
+domains = ["capcut.com"]
+[[competitors]]
+name = "VEED"
+domains = ["veed.io"]
+[[competitors]]
+name = "Submagic"
+domains = ["submagic.co"]
+[[competitors]]
+name = "Riverside"
+domains = ["riverside.fm"]
+[[competitors]]
+name = "Canva"
+domains = ["canva.com"]
+[[competitors]]
+name = "Buffer"
+domains = ["buffer.com"]
+[[competitors]]
+name = "Kapwing"
+domains = ["kapwing.com"]
+[[competitors]]
+name = "Vizard"
+domains = ["vizard.ai"]
+
+[run]
+ai_repeats = 2      # AI answers vary, so each AI check is repeated
+retries = 3
+
+[models]            # verify current model names before the real run
+openai = "gpt-4.1"
+gemini = "gemini-2.5-flash"
+perplexity = "sonar"
+claude = "claude-sonnet-4-5"
